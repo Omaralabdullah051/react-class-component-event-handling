@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Clock from './components/EventHandling/Clock';
+import Clock2 from './components/EventHandling/Clock2';
+import DateWeek from './components/EventHandling/DateWeek';
+import DateWeek2 from './components/EventHandling/DateWeek2';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Clock component="Class Component"></Clock>
+      <Clock2 component="Functional Component"></Clock2>
+      <DateWeek component="Class Component"></DateWeek>
+      <DateWeek2 component="funtional Component"></DateWeek2>
     </div>
   );
 }
